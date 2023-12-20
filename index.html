@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомастерская "Корея"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header-topline">
+            <div class="header_main">
+                <div class="header-flex">
+                    <img src="./img/clock-icon.png" class="clock-icon" />
+                    <p class="header-flex_p" >Пн-Пт: 10:00-19:00 <br> Сб-Вс: 10:00-16:00</p>
+                </div>
+                <div class="header-flex">
+                    <img src="./img/phone-icon.png" class="phone-icon" />
+                    <p class="header-flex_p header-flex_p-change">8-930-830-1-830</p>
+                </div>
+                <div class="header-flex">
+                    <img src="./img/geo-icon.png" class="geo-icon" />
+                    <p class="header-flex_p header-flex_p-change">г. Владимир, Почаевский овраг, д.9</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar_main" hidden>
+                <div class="navbar-flex navbar-flex_logo">
+                    <a href=""><img src="./img/logo.svg" class="navbar_logo"/></a>
+                </div>
+                <div class="navbar-flex_menu push">
+                    <button onclick="dropdown()" class="navbar-flex_menu-btn" hidden>МЕНЮ</button>
+                    <div id="menuDropdown" class="menu_dropdown-content">
+                        <a href="" class="menu_dropdown-a" hidden>главная</a>
+                        <a href="" class="menu_dropdown-a" hidden>о компании</a>
+                        <a href="http://127.0.0.1:5500/index.html#content" class="menu_dropdown-a" hidden>услуги</a>
+                        <a href="http://127.0.0.1:5500/index.html#contacts" class="menu_dropdown-a" hidden>контакты</a>
+                    </div>
+                </div>
+                <div class="navbar-flex">
+                    <a href="" class="navbar-flex_a" hidden>главная</a>
+                    <a href="" class="navbar-flex_a" hidden>о компании</a>
+                    <a href="http://127.0.0.1:5500/index.html#content" class="navbar-flex_a" hidden>услуги</a>
+                    <a href="http://127.0.0.1:5500/index.html#contacts" class="navbar-flex_a" hidden>контакты</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content__about">
+            <div class="about_h1-p-btn">
+                <h1 class="about_h1">Автомастерская, ремонт <br> и техническое обслуживание</h1>
+                <p class="about_p">Автосервис оснащен современным оборудованием. <br> 
+                    При работе используются только качественные, <br> рекомендованные производителем запчасти и материалы.</p>
+                <div class="container__about_btn">
+                    <button class="about_btn">СВЯЗАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content__skills">
+            <div class="container_skills">
+                <div class="skills_img-p">
+                    <img src="./img/like-icon.png" class="like-icon" />
+                    <p class="skills_p">Квалицифированные мастера</p>
+                </div>
+                <div class="skills_img-p">
+                    <img src="./img/like-icon.png" class="like-icon" />
+                    <p class="skills_p">Современное оборудование</p>
+                </div>
+                <div class="skills_img-p">
+                    <img src="./img/like-icon.png" class="like-icon" />
+                    <p class="skills_p">Большой выбор запчастей</p>
+                </div>
+                <div class="skills_img-p">
+                    <img src="./img/like-icon.png" class="like-icon" />
+                    <p class="skills_p">Доступные цены</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__services" id="content">
+                <h1 class="services_h1">УСЛУГИ</h1>
+                <div class="miniplates">
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate1.png" alt=""/>
+                            <figcaption>
+                                <h3>Техническое обслуживание автомобилей</h3>
+                                <p>Контроль технического состояния авто</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate2.png" alt=""/>
+                            <figcaption>
+                                <h3>Обслуживание и ремонт АКПП</h3>
+                                <p>Замена масла, масляного фильтра и диагностика</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate3.png" alt=""/>
+                            <figcaption>
+                                <h3>Шиномонтаж</h3>
+                                <p>Поддержание в рабочем состоянии колеса автомобиля</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate4.png" alt=""/>
+                            <figcaption>
+                                <h3>Диагностика и ремонт электронных  систем</h3>
+                                <p>Оценка текущего технического состояния машины</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate5.png" alt=""/>
+                            <figcaption>
+                                <h3>Промывка форсунок</h3>
+                                <p>Вторая жизнь системе впрыска топлива</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate6.png" alt=""/>
+                            <figcaption>
+                                <h3>Диагностика и ремонт ходовой части</h3>
+                                <p>Диагностика подвески автомобиля</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate7.png" alt=""/>
+                            <figcaption>
+                                <h3>Ремонт, заправка, обслуживание кондиционеров</h3>
+                                <p>Техническое обслуживание автомобильного кондиционера</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate8.png" alt=""/>
+                            <figcaption>
+                                <h3>Диагностика, ремонт и обслуживание ДВС</h3>
+                                <p>Тестирование всех систем и блоков</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    <div class="plate plate9">
+                        <figure class="effect-text-three">
+                            <img src="./img/plate9.png" alt="" class="img-plate9"/>
+                            <figcaption>
+                                <h3>Установка дополнительного оборудования</h3>
+                                <p>Системы и аксессуары, которые обеспечивают удобство и безопасность</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="content__reapir">
+            <div>
+                <h1 class="repair_h1">МЫ РЕМОНТИРУЕМ</h1>
+                <div class="slick-track">
+                    <div class="box-track">
+                        <img src="./img/kia.png" alt="Кия" title="Кия" class="track-img" />
+                    </div>
+                    <div class="box-track">
+                        <img src="./img/hyundai.png" alt="Хендай" title="Хендай" class="track-img" />
+                    </div>
+                    <div class="box-track">
+                        <img src="./img/ssangyong.png" alt="СсангЙонг" title="СсангЙонг" class="track-img" />
+                    </div>
+                    <div class="box-track change-track">
+                        <img src="./img/chevrolet.png" alt="Шевроле" title="Шевроле" class="track-img" />
+                    </div>
+                    <div class="box-track change-track2">
+                        <img src="./img/daewoo.png" alt="Део" title="Део" class="track-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="footer-top">
+            <div>
+                <a href=""><img src="./img/logo_dark.svg" class="footer-top_logo" /></a>
+            </div>
+            <div class="footer-top_p">
+                <p>8-930-830-1-830</p>
+                <p>60-18-30</p>
+            </div>
+            <div class="footer-top_p">
+                <p>masterkor33@yandex.ru</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom_p">
+                <p>2023 © Все права защищены</p>
+            </div>
+            <div class="footer-bottom_p">
+                <p>Используя сайт, вы уведомлены, что для полноценной его работы используются cookies и выражаете согласие на их обработку</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
